@@ -1,0 +1,40 @@
+
+.child input{
+    width:30%;
+
+}
+.parent{
+    margin-top:50px;
+}
+body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('./images/HOTEL_IMAGE.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
+ input, select {
+    width: 30%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+input::placeholder {
+    color: #ffffff;
+}
+ input:focus,  select:focus {
+    outline: none;
+    border-color: #0066cc;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+table{
+
+    width: 100%;
+   border-bottom: black 1px solid;
+}

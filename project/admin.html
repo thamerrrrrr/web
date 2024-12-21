@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css" />
+   
+</head>
+<body>
+    <div class="parent">
+    <div class="child">
+    <input type="text" name="username" placeholder="Username" required>
+</div>
+<br />
+<div class="child">
+    <input type="email" name="email" placeholder="Email" required>
+</div>
+<br />
+
+<div class="child">
+    <input type="password" name="password" placeholder="Password" required>
+</div>
+<br />
+
+   <div class="child">
+    <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+</div>
+<br />
+
+<div class="child">
+    <label for="role">Role:</label>
+    <select name="role" id="role">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+    </select>
+</div>
+<br />
+
+    <!-- Profile photo selection -->
+    <div class="image-preview" id="imagePreview" class="child">
+        <span>Choose a profile photo</span>
+        
+    </div>
+<br />
+
+    <input type="file" name="profile_photo" accept="image/*" id="profilePhoto" required>
+    
+    <!-- Additional file selection -->
+    <div class="image-preview child" id="filePreview" >
+        <span>Choose an additional file</span>
+    </div>
+<br />
+
+    <input type="file" name="additional_file" accept=".pdf,.doc,.docx,.txt" id="additionalFile">
+    <div class="child">
+    <input type="submit" value="ADD"/>
+    </div>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>password</th>
+        <th>phone number</th>
+        <th>Role</th>
+        <th>Profile Photo</th>
+        <th>Additional File</th>
+     
+    </tr>
+</thead>
+    
+</table>
+</body>
+</html>
